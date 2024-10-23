@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoteApp</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+
+    <div id="main">
+
+      <h1 id="userName">Welcome </h1>
+
+    <hr />
+
+    <div class="section">
+      
+
+        <button><a href="/addnote"> add a note </a> </button>
+        <button><a href="/search"> search a note </a> </button>
+        <button><a href="/viewallnotes"> view all notes </a> </button>
+
+       
+       
+    </div>
+
+    </div>
+    
+
+
+ <script>
+
+  window.onload = function() {
+            const username = localStorage.getItem('username');
+            const displayElement = document.getElementById('userName');
+            
+            if (username) {
+                displayElement.textContent = `Hello, ${username}!`;
+            } else {
+                displayElement.textContent = 'No username found.';
+            }
+        };
+ </script>
+  </body>
+</html>

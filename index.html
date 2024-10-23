@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteApp</title>
+    <link rel="stylesheet" href="/static/styles.css">    
+</head>
+<body>
+    <h1>Welcome </h1>
+
+    <hr>
+
+    <div class="section">
+           
+        <form action="/main" method="get" id="form">
+        <input type="text" placeholder="Enter your name..." id="person" >
+        <input type="submit"  value="Submit" id="submit" >
+        
+       
+       </form>
+
+    </div>
+
+   
+
+    <script >
+
+
+    document.getElementById('submit').onclick = function() {
+            const username = document.getElementById('person').value;
+            localStorage.setItem('username', username);
+
+    }
+
+    </script>
+</body>
+</html>

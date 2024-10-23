@@ -1,0 +1,43 @@
+a{
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    color: green;
+}
+
+.section{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(50, 196, 50);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 0;
+    color: white;
+   
+
+}
+
+button a{
+    color: white;
+}
+
+input{
+    width: 200px;
+    height: 30px;
+}
